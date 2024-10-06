@@ -1,0 +1,138 @@
+
+*{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: black;
+}
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+.flex{
+    display: flex;
+    align-items: center;
+  
+}
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+.container {
+    max-width: 100% ;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.main-nav {
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.company-logo img {
+    width: 125px;
+}
+.nav-links ul {
+    gap: 16px;
+}
+
+.hover-link:hover{
+    cursor: pointer;
+ color: rgb(19, 120, 215);
+
+}
+#hover-link:active{
+    color:red;
+}
+.nav-item.active {
+    color: var(--accent-color);
+}
+.search-bar {
+    height: 32px;
+    gap: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+li{
+    margin: 0px 4px;
+}
+.news-input{
+    width: 200px;
+    height: 100%;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    border: 2px solid #bbd0e2;
+    padding-inline: 12px;
+}
+.search-button{
+    background-color: rgb(18, 70, 154);
+    overflow: hidden;
+    border-radius: 2px;
+    font-size: small;
+    cursor: pointer;
+    color: aliceblue;
+    border: none;
+    padding: 4px;
+}
+.search-button:hover {
+    background-color: black
+}
+main {
+    padding-block: 20px;
+    margin-top: 70px;
+}
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-13px);
+}
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
